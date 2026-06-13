@@ -1,0 +1,6 @@
+{
+  "name": "Hasta la Última Estación",
+  "description": "Una novela visual interactiva y emocional a bordo de un tren de larga distancia, donde controlas los pensamientos y decisiones de Aranxita en su viaje inolvidable junto a un desconocido.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
