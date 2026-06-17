@@ -9,12 +9,14 @@ interface DynamicBackgroundProps {
   vibrate?: boolean;
 }
 
+const BASE = import.meta.env.BASE_URL;
+
 // Map backgrounds to their premium generated illustration images
 const SCENERY_IMAGES = {
-  train_day: "/images/scenery_train_day_1781238298175.jpg",
-  train_sunset: "/images/scenery_train_sunset_1781238307638.jpg",
-  train_night: "/images/scenery_train_night_1781238319503.jpeg",
-  station_rain: "/images/scenery_station_rain_1781238336044.jpg"
+  train_day: `${BASE}images/scenery_train_day_1781238298175.jpg`,
+  train_sunset: `${BASE}images/scenery_train_sunset_1781238307638.jpg`,
+  train_night: `${BASE}images/scenery_train_night_1781238319503.jpeg`,
+  station_rain: `${BASE}images/scenery_station_rain_1781238336044.jpg`
 };
 
 export const DynamicBackground: React.FC<DynamicBackgroundProps> = ({

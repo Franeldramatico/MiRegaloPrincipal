@@ -106,11 +106,12 @@ export const GalleryPanel: React.FC<GalleryPanelProps> = ({
     }
   ];
 
+  const BASE = import.meta.env.BASE_URL;
   const visualScenes = [
-    { title: "Estación con Lluvia", description: "Bóvedas de hierro empañadas de vapor matutino", timeOfDay: "Mañana", weather: "Lluvia", image: "/images/scenery_station_rain_1781238336044.jpg" },
-    { title: "El Vagón de Mediodía", description: "Sol brillante sobre la llanura forestal activa", timeOfDay: "Mediodía", weather: "Sol", image: "/images/scenery_train_day_1781238298175.jpg" },
-    { title: "Cabina Ámbar Íntima", description: "Sombras estiradas e íntima timidez bajo la puesta", timeOfDay: "Atardecer", weather: "Atardecer", image: "/images/scenery_train_sunset_1781238307638.jpg" },
-    { title: "Vías de la Noche Estrellada", description: "Ventanal infinito apuntado al abismo sideral", timeOfDay: "Noche", weather: "Noche Estrellada", image: "/images/scenery_train_night_1781238319503.jpeg" },
+    { title: "Estación con Lluvia", description: "Bóvedas de hierro empañadas de vapor matutino", timeOfDay: "Mañana", weather: "Lluvia", image: `${BASE}images/scenery_station_rain_1781238336044.jpg` },
+    { title: "El Vagón de Mediodía", description: "Sol brillante sobre la llanura forestal activa", timeOfDay: "Mediodía", weather: "Sol", image: `${BASE}images/scenery_train_day_1781238298175.jpg` },
+    { title: "Cabina Ámbar Íntima", description: "Sombras estiradas e íntima timidez bajo la puesta", timeOfDay: "Atardecer", weather: "Atardecer", image: `${BASE}images/scenery_train_sunset_1781238307638.jpg` },
+    { title: "Vías de la Noche Estrellada", description: "Ventanal infinito apuntado al abismo sideral", timeOfDay: "Noche", weather: "Noche Estrellada", image: `${BASE}images/scenery_train_night_1781238319503.jpeg` },
   ];
 
   return (

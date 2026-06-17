@@ -9,10 +9,12 @@ interface CharacterPortraitProps {
   size?: "md" | "lg" | "xl";
 }
 
+const BASE = import.meta.env.BASE_URL;
+
 // Map characters to their high-quality generated images
 const CHARACTER_IMAGES = {
-  Aranxita: "/images/aranxita_portrait_1781238275011.png",
-  Franxito: "/images/franxito_portrait_1781238286427.jpg"
+  Aranxita: `${BASE}images/aranxita_portrait_1781238275011.png`,
+  Franxito: `${BASE}images/franxito_portrait_1781238286427.jpg`
 };
 
 export const CharacterPortrait: React.FC<CharacterPortraitProps> = ({
